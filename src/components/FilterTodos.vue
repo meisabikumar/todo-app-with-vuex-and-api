@@ -12,7 +12,7 @@
   </div>
 </template>
   
-<script>
+  <script>
 import { mapActions } from "vuex";
 export default {
   name: "FilterTodos",
@@ -20,7 +20,7 @@ export default {
 };
 </script>
   
-<style scoped>
+  <style scoped>
 select {
   margin-top: 20px;
   padding: 6px;
