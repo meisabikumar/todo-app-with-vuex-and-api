@@ -1,10 +1,18 @@
 <template>
-    <h3>todos</h3>
+  <h3>Todos</h3>
+  <div class="todos">
+    <div :key="todo.id" v-for="todo in allTodos" class="todo">
+      {{todo.title}}
+    </div>
+  </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   name: "Todos",
+  computed: mapGetters(["allTodos"]),
 };
 </script>
 
